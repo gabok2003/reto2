@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <script src="js/agregarChocolate.js"></script>
+    <script src="js/listarChocolate.js"></script>
+    <script src="js/borrarChocolate.js"></script>
+    <script src="js/editarChocolate.js"></script>
+    
+    
+
+    <link rel="stylesheet" href="css/crear.css">
+    <link rel="stylesheet" href="css/tabla.css">
+    
+
+
+</head>
+<body>
+    <section class="form-login">
+        
+        <h5>Chocolate</h5>
+        
+        <input class="controls" type="text" id="reference" placeholder="Reference">
+        <input class="controls" type="text" id="category" placeholder="Category"> 
+        <input class="controls" type="text" id="description" placeholder="Description"> 
+        <input class="controls" type="text" id="availability" placeholder="True">
+        <input class="controls" type="number" id="price" placeholder="Price">
+        <input class="controls" type="number" id="quantity" placeholder="quantity"> 
+        <input class="controls" type="text" id="photography" placeholder="Photography">
+    
+        
+        <button class="buttons"  id="btnCrearcuentaChocolate" onclick="agregarChocolate()">Crear cuenta </button> 
+        <button class="buttons"  id="btnGuardarChocolate" onclick="actualizarChocolate()">Guardar </button> 
+        <button class="buttons"  id="btnChocolate" onclick="editarRegistroChocolate()">Prueba </button> 
+        <p> ¿No tienes cuenta? <a href="iniciarsesion.html">Crea tu cuenta aquí</a></p>
+       
+    </section>
+    <div id="listado1"></div>
+</body>
+</html>

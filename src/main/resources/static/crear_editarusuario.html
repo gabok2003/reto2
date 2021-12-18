@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="js/agregar.js"></script>
+    <script src="js/borrar.js"></script>
+    <script src="js/listar.js"></script>
+    <script src="js/editar.js"></script>
+    <link rel="stylesheet" href="css/crear.css">
+    <link rel="stylesheet" href="css/tabla.css">
+   
+</head>
+<body>
+    <section class="form-login">
+   
+        <h5>Crear cuenta</h5>
+        
+        <input class="controls" type="number" id="numId" placeholder="Id">
+        <input class="controls" type="text" id="identification" placeholder="Indentificacion">
+        <input class="controls" type="text" id="nombre" placeholder="Nombre"> 
+        <input class="controls" type="text" id="address" placeholder="Address"> 
+        <input class="controls" type="text" id="cellPhone" placeholder="CellPhone">
+        <input class="controls" type="text" id="email" placeholder="Email">
+        <input class="controls" type="text" id="zone" placeholder="Zone"> 
+        <input class="controls" type="text" id="type" placeholder="Type">
+
+
+        <input class="controls" type="password" id="contrasena" value="" placeholder="Contraseña">
+        <input class="controls" type="password" id="contrasena2" value="" placeholder="Confirme la contraseña">
+    
+
+        <button class="buttons"  id="btnCrearcuenta" onclick="validarexistencia()">Crear cuenta </button> 
+        <button class="buttons"  id="btnGuardar" onclick="actualizar()">Guardar </button> 
+        <p> ¿No tienes cuenta? <a href="iniciarsesion.html">Crea tu cuenta aquí</a></p>
+        
+    </section>
+   
+     <div id="listado1"></div>
+    </body>
+</html>
